@@ -1,0 +1,39 @@
+{
+    "name": "Huld City Bikes Leaderboard",
+    "description": "Monthly and season leaderboards of HSL City Bikes users",
+    "version": "0.0.0.3",
+    "author": "Petar Ilin <petar.ilin@huld.io>",
+    "manifest_version": 3,
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "storage",
+        "notifications",
+        "alarms"
+    ],
+    "host_permissions": [
+        "https://www.hsl.fi/",
+        "https://orcl1-ilinpetar.ddns.net/"
+    ],
+    "action": {
+        "default_icon": {
+            "16": "/images/huld_bicycle.png",
+            "32": "/images/huld_bicycle.png",
+            "48": "/images/huld_bicycle.png",
+            "128": "/images/huld_bicycle.png"
+        },
+        "default_title": "Huld City Bikes Leaderboard",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "/images/huld_bicycle.png",
+        "32": "/images/huld_bicycle.png",
+        "48": "/images/huld_bicycle.png",
+        "128": "/images/huld_bicycle.png"
+    }
+}
